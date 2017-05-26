@@ -1,0 +1,9 @@
+<h1>Login</h1>
+
+<%= form_tag login_url method: "post" do %>
+  <%= label_tag "Name" %><br>
+  <%= text_field_tag :name %><br>
+  <%= submit_tag "login" %>
+<% end %>
+
+<%= link_to "Logout", logout_path, method: "post" %>
